@@ -1,0 +1,15 @@
+print ("ดัชนีมวลกายBMI")
+w =float(input("นน. : "))
+h =float(input("สส. : "))
+x =(h/100)**2
+y =w/x
+print("ค่าBMI %.2f" %x)
+if y < 18.5:
+        print("ผอม")
+elif y >= 18.5 and y < 23:
+        print("ปกติ")
+elif y >= 23 and y < 25:
+        print("ท้วม")
+elif y >= 25 and y < 30:
+        print("อ้วน")
+else: print("อ้วนมาก")
