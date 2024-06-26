@@ -1,0 +1,22 @@
+def bmi(w,h):
+    x =(h/100)**2
+    y =w/x
+    print("ค่าBMI %.2f" %y)
+    return y
+def what (y):
+    if y < 18.5:
+        print("ผอม")
+    elif y >= 18.5 and y < 23:
+        print("ปกติ")
+    elif y >= 23 and y < 25:
+        print("ท้วม")
+    elif y >= 25 and y < 30:
+        print("อ้วน")
+    elif y >30:
+        print("อ้วนมาก")
+    else: print("ใส่ผิดอะเปล่า")
+
+w =float(input("นน. : "))
+h =float(input("สส. : "))
+
+what(bmi(w,h))
